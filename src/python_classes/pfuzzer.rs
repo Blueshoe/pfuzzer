@@ -27,6 +27,6 @@ impl Pfuzzer {
                 Utf32Str::Ascii(query.as_bytes()),
             ))
         }
-        return res.to_owned();
+        return res;
     }
 }
