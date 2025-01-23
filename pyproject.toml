@@ -1,0 +1,19 @@
+[build-system]
+requires = ["maturin>=1.8,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "pfuzzer"
+authors = [{name="Korbinian Habereder",email="korbinian@blueshoe.de"}]
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+dynamic = ["version"]
+dependencies = [
+    "maturin>=1.8.1",
+]
+[tool.maturin]
+features = ["pyo3/extension-module"]
